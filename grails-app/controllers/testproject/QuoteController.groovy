@@ -26,6 +26,8 @@ class QuoteController {
 
         println "Have some cats!"
 
+        println "And here are some dogs"
+
         [author: randomQuote.author + "," + randomQuote.year, content: randomQuote.content]
     }
 }
