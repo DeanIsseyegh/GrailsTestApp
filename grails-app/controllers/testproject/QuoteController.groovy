@@ -20,6 +20,7 @@ class QuoteController {
         Quote randomQuote = Quote.findById(randomId + 1)
 
         println "This is a 'develop' feature!"
+        println "Zombies!!!!"
 
         [author: randomQuote.author + "," + randomQuote.year, content: randomQuote.content]
     }
