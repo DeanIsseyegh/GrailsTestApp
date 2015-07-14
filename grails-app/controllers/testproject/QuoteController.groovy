@@ -19,6 +19,8 @@ class QuoteController {
         println "******Random id is: " + randomId
         Quote randomQuote = Quote.findById(randomId + 1)
 
+        println "This is a 'develop' feature!"
+
         [author: randomQuote.author + "," + randomQuote.year, content: randomQuote.content]
     }
 }
