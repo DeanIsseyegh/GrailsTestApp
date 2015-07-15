@@ -3,6 +3,7 @@
   User: dean
   Date: 14/07/15
   Time: 11:46
+  author: randomQuote.author + "," + randomQuote.year, content: randomQuote.content
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -12,8 +13,8 @@
 </head>
 
 <body>
-${content}
+<p>${quote.content}</p>
 <br/><br/>
--${author}
+<p>-${quote.author}, ${quote.year}</p>
 </body>
 </html>

@@ -7,5 +7,8 @@ class Quote {
     int year
 
     static constraints = {
+        author blank:false
+        content blank:false
+        year blank:false
     }
 }
