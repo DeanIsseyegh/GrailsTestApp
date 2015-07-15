@@ -4,31 +4,13 @@ class QuoteController {
 
     static scaffold = true;
 
-    /*def index() {
-        render "Wazzupp!! Index method used."
-    }*/
+    QuoteService quoteService
+    RandomFeaturesService randomFeaturesService
 
     def randomQuote() {
-        def staticAuthor = "Random Dev"
-        def staticContent = "Random Quote!"
+        Quote randomQuote = quoteService.getRandomQuote()
+        randomFeaturesService.doRandomFeatures()
 
-        int numberOfQuotes = Quote.count
-        println "******Number of quotes in DB is : " + numberOfQuotes
-
-        int randomId = new Random().nextInt(numberOfQuotes)
-        println "******Random id is: " + randomId
-        Quote randomQuote = Quote.findById(randomId + 1)
-
-        println "This is a 'develop' feature!"
-
-        println "Zombies!!!!"
-        println "More zombies!!!"
-
-        println "Have some cats!"
-
-        println "And here are some dogs"
-        println "Even more dogs"
-
-        [author: randomQuote.author + "," + randomQuote.year, content: randomQuote.content]
+        [quote: randomQuote]
     }
 }
