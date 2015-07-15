@@ -4,7 +4,7 @@ class Quote {
 
     String author
     String content
-    int year
+    Integer year
 
     static constraints = {
         author blank:false

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="1" failures="0" hostname="dean" id="0" name="Filter" package="org.junit.runner.manipulation" tests="1" time="0.018" timestamp="2015-07-15T08:59:24">
+  <testsuite errors="1" failures="0" hostname="dean" id="0" name="Filter" package="org.junit.runner.manipulation" tests="1" time="0.016" timestamp="2015-07-15T09:47:16">
       <properties />
 
-      <testcase classname="org.junit.runner.manipulation.Filter" name="initializationError" time="0.017">
-          <error message="No tests found matching grails test target pattern filter from org.junit.runner.Request$1@779479bb" type="java.lang.Exception">java.lang.Exception: No tests found matching grails test target pattern filter from org.junit.runner.Request$1@779479bb
+      <testcase classname="org.junit.runner.manipulation.Filter" name="initializationError" time="0.016">
+          <error message="No tests found matching grails test target pattern filter from org.junit.runner.Request$1@3ed3b8c4" type="java.lang.Exception">java.lang.Exception: No tests found matching grails test target pattern filter from org.junit.runner.Request$1@3ed3b8c4
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:110)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:122)
